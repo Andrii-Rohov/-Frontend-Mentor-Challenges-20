@@ -1,1 +1,2 @@
-index.html images scripts styles .gitignore index.md
+
+index.html styles images scripts .gitignore index.md
