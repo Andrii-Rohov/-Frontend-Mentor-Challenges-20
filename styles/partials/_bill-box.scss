@@ -1,0 +1,189 @@
+#bill-box {
+    display: flex;
+    flex-direction: column;
+    width: 51%;
+    min-width: 245px;
+    background-color: $White;
+    
+    #bill {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0 40px 3px;
+        background-color: $White;
+        #check-bill-label {
+            font-size: 16px;
+            font-weight: 700;
+            color: $Dark-grayish-cyan-hard;
+        }
+        #check-bill {
+            font-family: $FONT;
+            text-align: right;
+            width: 89%;
+            height: 48px;
+            background-color: white;
+            border:  2px solid transparent;
+            box-sizing: border-box;
+            border-radius: 6px;
+            margin-top: 7px;
+            font-size: 25px;
+            font-weight: 700;
+            padding-right: 15px;
+            color: $Very-dark-cyan;
+            background-color: hsl(202, 50%, 97%);
+            cursor: pointer;
+            transition: 300ms ease-in-out;
+            &:focus {
+                &::placeholder {
+                 color: transparent;
+                }
+                border:  2px solid $Strong-cyan;
+                outline: none;
+                
+            }
+        }
+        #bill-dollar {
+            position: absolute;
+            top: 60%;
+            left: 4.5%;
+        }
+        #error-bill {
+            position: absolute;
+            margin: 0;
+            top: 0;
+            right: 12%;
+            color: hsl(10, 68%, 58%);
+            opacity: 0;
+            visibility: hidden;
+            font-size: 16px;
+            font-weight: 700;
+            transition: 250ms ease-in-out;
+        }
+    }
+    #tip-block {
+        height: 180px;
+        margin: 0 0 0 3px;
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #5e7a7d;
+            margin: 0px 0 15px;
+        }
+        #percentages {
+            background-color: $White;
+            width: 91%;
+            height: 130px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            .perc {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                height: 75%;
+                border-radius: 6px;
+                background-color: $Very-dark-cyan;
+                cursor: pointer;
+                transition: 300ms ease-in-out;
+                color: $White;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 0;
+                
+                    
+                
+                &:hover {
+                    background-color: hsl(173, 61%, 77%);
+                    
+                        color: $Very-dark-cyan;
+                    
+                    
+                }
+            }
+            #custom-perc {
+                text-align: right;
+                font-family: $FONT;
+                width: 90%;
+                height: 75%;
+                border-radius: 6px;
+                color: $Very-dark-cyan;
+                background-color: hsl(202, 50%, 97%);
+                cursor: pointer;
+                border:  2px solid transparent;
+                box-sizing: border-box;
+                border-radius: 6px;
+                padding-right: 15px;
+                font-size: 24px;
+                font-weight: 700;
+                transition: 300ms ease-in-out;
+                &:focus {
+                    &::placeholder {
+                     color: transparent;
+                    }
+                    border:  2px solid $Strong-cyan;
+                    outline: none;
+                    
+                }
+            }
+
+            
+        }
+    }
+    #people-number {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0 0 3px;
+        background-color: $White;
+
+        #people-num-lable {
+            font-size: 16px;
+            font-weight: 700;
+            color: $Dark-grayish-cyan-hard;
+        }
+        #people-num {
+            font-family: $FONT;
+            text-align: right;
+            width: 89%;
+            height: 48px;
+            background-color: white;
+            border:  2px solid transparent;
+            box-sizing: border-box;
+            border-radius: 6px;
+            margin-top: 7px;
+            font-size: 25px;
+            font-weight: 700;
+            padding-right: 15px;
+            color: $Very-dark-cyan;
+            background-color: hsl(202, 50%, 97%);
+            cursor: pointer;
+            transition: 300ms ease-in-out;
+            &:focus {
+                &::placeholder {
+                 color: transparent;
+                }
+                border:  2px solid $Strong-cyan;
+                outline: none;
+                
+            }
+        }
+        #people-icon {
+            position: absolute;
+            top: 60%;
+            left: 4.5%;
+        }
+        #error-people-num {
+            position: absolute;
+            margin: 0;
+            top: 0;
+            right: 12%;
+            color: hsl(10, 68%, 58%);
+            opacity: 0;
+            visibility: hidden;
+            font-size: 16px;
+            font-weight: 700;
+            transition: 250ms ease-in-out;
+        }
+    }
+
+}

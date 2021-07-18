@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+  <header id="header">
+    <img src="./images/logo.svg" alt="logo" id="logo">
+  </header>
+
+  <main id="main-content">
+    <div id="content-wrapper">
+      <div id="bill-box">
+
+        <div id="bill">
+          <label for="check-bill" id="check-bill-label">Bill</label>
+          <input type="text" id="check-bill" placeholder="0">
+          <p id="error-bill">Error</p>
+          <img src="./images/icon-dollar.svg" alt="icon-dollar" id="bill-dollar">
+        </div>
+  
+        <div id="tip-block">
+          <h2>
+            Select Tip %
+          </h2>
+          <div id="percentages">
+            
+            <p class="5 perc">5%</p>
+            <p class="10 perc">10%</p>
+            <p class="15 perc">15%</p>
+            <p class="25 perc">25%</p>
+            <p class="50 perc">50%</p>
+            <input type="text" id="custom-perc" placeholder="Custom">
+
+          </div>
+        </div>
+
+        <div id="people-number">
+          <label for="people-num" id="people-num-lable">Number of People</label>
+          <input type="text" id="people-num" placeholder="0">
+          <p id="error-people-num">Error</p>
+          <img src="./images/icon-person.svg" alt="icon-person" id="people-icon">
+        </div>
+        
+      </div>
+      <div id="result-box">
+        <div id="result-box-wrapper">
+          <div id="tip-amount" class="results">
+            <h2>Tip Amount<br>
+              <span>/ person</span></h2>
+              
+            <p id="tip-amount-result" class="result-dollar"><img src="./images/icon-dollar-cyan.svg" alt="icon-dollar">0.00</p>
+          </div>
+          
+          <div id="total-person" class="results">
+            <h2>Total<br>
+              <span>/ person</span>
+            </h2>
+            
+            <p class="result-dollar" id="total-person-result"><img src="./images/icon-dollar-cyan.svg" alt="icon-dollar">0.00</p>
+          </div>
+          
+          <div id="reset">
+            <p>Reset</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+ 
+  
+  <footer class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Andrii-Rohov">ANDRII ROHOV</a>.
+    </p>
+  </footer>
+   <script src="./scripts/script.js"></script>
+</body>
+</html>

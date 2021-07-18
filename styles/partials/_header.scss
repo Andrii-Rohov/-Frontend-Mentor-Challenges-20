@@ -1,0 +1,14 @@
+#header {
+    height: 305px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 13px;
+    color: $Very-dark-cyan;
+    letter-spacing: 8px;
+    line-height: 1.4;
+    #logo {
+        margin-bottom: 88px;
+    }
+}

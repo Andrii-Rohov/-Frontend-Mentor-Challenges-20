@@ -1,0 +1,64 @@
+@media (max-width: 730px) {
+    #header {
+        height: 144px !important;
+        #logo {
+            margin-bottom: 40px !important;
+        }
+    }
+    #main-content {
+        flex-direction: column !important;
+        height: auto !important;
+        justify-content: center;
+        align-items: center;
+        min-width: auto !important;
+        width: 100% !important;
+    }
+    #content-wrapper {
+        flex-direction: column !important;
+        margin: 0 !important;
+        padding: 20px 0px !important;
+    }
+    #bill-box {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px; 
+        #check-bill {
+            width: 100% !important;
+        }
+        #tip-block {
+            height: 215px !important; 
+        }
+        #percentages {
+            width: 90% !important;
+            margin: auto;
+            grid-template-columns: 1fr 1fr !important;
+            height:  190px !important;
+        }
+        #people-num {
+            width: 100% !important;
+            margin: auto;
+        }
+    }
+    #result-box {
+        width: 90%;
+        margin: auto;
+        min-width: auto !important;
+        
+    }
+    #result-box-wrapper {
+        margin: 8% 7% !important; 
+        min-height: 250px !important;
+    }
+    .results {
+        margin-bottom: 20px !important;
+    }
+    .result-dollar {
+        font-size: 40px !important;
+    }
+    #error-bill {
+        right: 0% !important;
+    }
+    #error-people-num {
+        right: 0% !important;
+    }
+}

@@ -1,0 +1,64 @@
+#result-box {
+    position: relative;
+    width: 49%;
+    min-width: 415px;
+    border-radius: 15px;
+    background-color: $Very-dark-cyan;
+    #result-box-wrapper {
+        height: 100%;
+        margin: 10% 9%;
+        
+    }
+    .results{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        h2 {
+            color: white;
+            font-size: 16px;
+            margin: 0;
+            line-height: 22px;
+            span {
+                color: $Dark-grayish-cyan;
+                font-size: 13px;
+            }
+        }
+        .result-dollar {
+            font-size: 48px;
+            color: $Strong-cyan;
+            font-weight: 700;
+            margin: 0;
+            img {
+                width: 21px;
+                height: 33px    
+            }
+
+        }
+    }
+    #reset {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 45px;
+        width: 80%;
+        background-color: hsl(183, 79%, 24%);
+        border-radius: 5px;
+        height: 48px;
+        margin: auto;
+        left: 10%;
+        right: 10%;
+        cursor: pointer;
+
+        p{
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 0;
+            font-size: 20px;
+            color: $Very-dark-cyan;
+        }
+
+    }
+}
